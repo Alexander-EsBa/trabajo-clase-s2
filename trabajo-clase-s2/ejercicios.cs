@@ -11,17 +11,25 @@ namespace trabajo_clase_s2
         // Ejercicio 1
         public void ejercicio1()
         {
-            Console.Write("Ingrese el primer numero entero: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("===== EJERCICIO 1 =====");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.Write("\n$ Ingrese el primer numero entero: ");
             int numero1 = int.Parse(Console.ReadLine());
 
-            Console.Write("Ingrese el segundo numero enter: ");
+            Console.Write("\n$ Ingrese el segundo numero enter: ");
             int numero2 = int.Parse(Console.ReadLine());
 
             int suma = numero1 + numero2;
             int producto = numero1 * numero2;
 
-            Console.WriteLine("La suma de los dos numeros ingresados es:" + suma);
-            Console.WriteLine("La multiplicacion de los dos numeros ingresados es:" + producto);
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("\n---> La suma de los dos numeros ingresados es: " + suma);
+            Console.WriteLine("\n---> La multiplicacion de los dos numeros ingresados es: " + producto);
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\n***** PRESIONE CUALQUIER TECLA PARA CONTINUAR *****\n");
 
             Console.ReadKey();
         }

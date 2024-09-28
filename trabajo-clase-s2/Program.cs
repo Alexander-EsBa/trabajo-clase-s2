@@ -12,6 +12,7 @@ namespace trabajo_clase_s2
         {
             ejercicios ejercicios = new ejercicios();
             ejercicios.ejercicio1();
+            ejercicios.ejercicio2();
         }
 
     }

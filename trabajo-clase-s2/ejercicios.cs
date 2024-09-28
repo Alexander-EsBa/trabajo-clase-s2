@@ -11,8 +11,36 @@ namespace trabajo_clase_s2
         // Ejercicio 1
         public void ejercicio1()
         {
+            int horasTrabajadas;
+            float costoHora;
+            float sueldo;
+            string linea;
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("===== EJERCICIO 1 =====");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.Write("\n$ Ingrese horas trabajadas por el operario: ");
+            linea = Console.ReadLine();
+            horasTrabajadas = int.Parse(linea);
+            Console.Write("\n$ Ingrese el pago por hora: ");
+            linea = Console.ReadLine();
+            costoHora = float.Parse(linea);
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            sueldo = horasTrabajadas * costoHora;
+            Console.WriteLine("\n---> El sueldo total del operario es: " + sueldo);
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\n***** PRESIONE CUALQUIER TECLA PARA CONTINUAR *****\n");
+            Console.ReadKey();
+        }
+
+        // Ejercicio 2
+        public void ejercicio2()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("===== EJERCICIO 2 =====");
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.Write("\n$ Ingrese el primer numero entero: ");
@@ -33,7 +61,6 @@ namespace trabajo_clase_s2
 
             Console.ReadKey();
         }
-        // Ejercicio 2
         // Ejercicio 3
         // Ejercicio 4
         // Ejercicio 5
